@@ -3,8 +3,15 @@
 import Image from 'next/image';
 import Carousel from './components/Carousel';
 import ZoomableImage from './components/ZoomableImage';
+import WhatsAppButton from './components/WhatsAppButton';
 
 export default function Home() {
+  const phoneNumber = '5543933672587'; // +55 43 93367-2587
+
+  const handleContactClick = () => {
+    const message = encodeURIComponent('Olá! Gostaria de mais informações sobre o Tamboré Londrina.');
+    window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
+  };
   // Array com as imagens do carousel
   const carouselImages = [
     '/carousel/slide1.jpg',
@@ -61,8 +68,9 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Botão Cadastre-se */}
+          {/* Botão Entrar em contato */}
           <button
+            onClick={handleContactClick}
             className="px-12 py-4 rounded-full text-[18px] font-semibold transition-all duration-300 hover:scale-105 shadow-2xl"
             style={{
               backgroundColor: 'rgba(255, 255, 255, 0.92)',
@@ -70,7 +78,7 @@ export default function Home() {
               fontFamily: 'Arial, sans-serif'
             }}
           >
-            Cadastre-se
+            Entrar em contato
           </button>
         </div>
 
@@ -233,9 +241,20 @@ export default function Home() {
       {/* CTA Section */}
       <section className="w-full py-20 px-4" style={{ backgroundColor: '#EEEBE7' }}>
         <div className="max-w-[900px] mx-auto text-center">
-          <h3 className="text-[36px] font-light leading-relaxed" style={{ color: '#5C5C5C', fontFamily: 'Arial, sans-serif' }}>
-            Cadastre-se e receba um atendimento exclusivo do nosso time
+          <h3 className="text-[36px] font-light leading-relaxed mb-8" style={{ color: '#5C5C5C', fontFamily: 'Arial, sans-serif' }}>
+            Entre em contato e receba um atendimento exclusivo do nosso time
           </h3>
+          <button
+            onClick={handleContactClick}
+            className="px-12 py-4 rounded-full text-[18px] font-semibold transition-all duration-300 hover:scale-105 shadow-xl"
+            style={{
+              backgroundColor: '#616A6F',
+              color: '#FFFFFF',
+              fontFamily: 'Arial, sans-serif'
+            }}
+          >
+            Entrar em contato
+          </button>
         </div>
       </section>
 
@@ -376,6 +395,9 @@ export default function Home() {
           </p>
         </div>
       </footer>
+
+      {/* WhatsApp Floating Button */}
+      <WhatsAppButton />
     </main>
   );
 }
