@@ -136,7 +136,7 @@ export default function Home() {
               <div className="text-[18px] font-semibold leading-tight">45 mil m²</div>
             </div>
             <div className="flex-1 flex flex-col items-center justify-center text-center px-4">
-              <div className="text-[15px] font-light leading-tight">Fração</div>
+              <div className="text-[15px] font-light leading-tight">Fiação</div>
               <div className="text-[15px] font-light leading-tight">subterrânea</div>
             </div>
           </div>
