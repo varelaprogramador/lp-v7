@@ -21,17 +21,16 @@ export default function Home() {
     '/carousel/slide5.jpg',
   ];
 
+  const isMobile = window.innerWidth < 768;
+
   return (
     <main className="w-full min-h-screen bg-white overflow-x-hidden">
       {/* Hero Section - Página 1 do PDF */}
       <section className="relative w-full h-screen min-h-[700px] flex items-center justify-center z-50">
         {/* Imagem de fundo - Mobile */}
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat md:hidden"
-          style={{
-            backgroundImage: 'url(/banner_hero_mobile.jpg)',
-            backgroundColor: '#4a7c59' // Fallback color
-          }}
+          className={`absolute inset-0 bg-cover bg-center bg-no-repeat md:hidden ${isMobile ? 'bg[/banner_hero_mobile.jpg]' : 'bg[/banner_hero_desktop.jpg]'}`}
+
         />
 
         {/* Imagem de fundo - Desktop */}
