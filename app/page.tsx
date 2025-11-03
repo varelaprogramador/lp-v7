@@ -49,21 +49,21 @@ export default function Home() {
         {/* Content centralizado */}
         <div className="relative z-10 flex flex-col items-center justify-center text-white text-center px-4 max-w-5xl mx-auto">
           {/* Logo TAMBORÉ LONDRINA */}
-          <div className="mb-16">
-            <h1 className="text-[90px] md:text-[110px] font-bold tracking-[0.15em] leading-none mb-1 drop-shadow-2xl" style={{ fontFamily: 'Arial, sans-serif' }}>
+          <div className="mb-8 md:mb-16">
+            <h1 className="text-[50px] sm:text-[70px] md:text-[90px] lg:text-[110px] font-bold tracking-[0.15em] leading-none mb-1 drop-shadow-2xl" style={{ fontFamily: 'Arial, sans-serif' }}>
               TAMBORÉ
             </h1>
-            <h2 className="text-[70px] md:text-[85px] font-light tracking-[0.25em] leading-none drop-shadow-2xl" style={{ fontFamily: 'Arial, sans-serif' }}>
+            <h2 className="text-[40px] sm:text-[55px] md:text-[70px] lg:text-[85px] font-light tracking-[0.25em] leading-none drop-shadow-2xl" style={{ fontFamily: 'Arial, sans-serif' }}>
               LONDRINA
             </h2>
           </div>
 
           {/* Informações dos lotes */}
-          <div className="mb-12 space-y-1">
-            <p className="text-[26px] font-normal drop-shadow-lg" style={{ fontFamily: 'Arial, sans-serif' }}>
+          <div className="mb-8 md:mb-12 space-y-1">
+            <p className="text-[18px] sm:text-[22px] md:text-[26px] font-normal drop-shadow-lg" style={{ fontFamily: 'Arial, sans-serif' }}>
               Lotes de <span className="font-bold">411 a 1.167 m²</span>
             </p>
-            <p className="text-[26px] font-normal drop-shadow-lg" style={{ fontFamily: 'Arial, sans-serif' }}>
+            <p className="text-[18px] sm:text-[22px] md:text-[26px] font-normal drop-shadow-lg" style={{ fontFamily: 'Arial, sans-serif' }}>
               Exclusivo <span className="font-bold">clube com lagos</span>
             </p>
           </div>
@@ -71,7 +71,7 @@ export default function Home() {
           {/* Botão Entrar em contato */}
           <button
             onClick={handleContactClick}
-            className="px-12 py-4 rounded-full text-[18px] font-semibold transition-all duration-300 hover:scale-105 shadow-2xl"
+            className="px-8 md:px-12 py-3 md:py-4 rounded-full text-[16px] md:text-[18px] font-semibold transition-all duration-300 hover:scale-105 shadow-2xl"
             style={{
               backgroundColor: 'rgba(255, 255, 255, 0.92)',
               color: '#4A4A4A',
@@ -95,9 +95,9 @@ export default function Home() {
       </section>
 
       {/* Video Section - Cor bege do PDF: #EEEBE7 */}
-      <section className="w-full py-24 px-4 relative" style={{ backgroundColor: '#EEEBE7', zIndex: 1 }}>
+      <section className="w-full py-16 md:py-24 px-4 relative" style={{ backgroundColor: '#EEEBE7', zIndex: 1 }}>
         <div className="max-w-[1100px] mx-auto">
-          <h3 className="text-[38px] text-center mb-14 font-light" style={{ color: '#5C5C5C', fontFamily: 'Arial, sans-serif' }}>
+          <h3 className="text-[26px] sm:text-[32px] md:text-[38px] text-center mb-10 md:mb-14 font-light" style={{ color: '#5C5C5C', fontFamily: 'Arial, sans-serif' }}>
             Autêntico como a sua natureza
           </h3>
 
@@ -119,25 +119,25 @@ export default function Home() {
       </section>
 
       {/* Carousel Section - Cinza do PDF: #616A6F */}
-      <section className="w-full py-16 px-4" style={{ backgroundColor: '#616A6F' }}>
+      <section className="w-full py-12 md:py-16 px-4" style={{ backgroundColor: '#616A6F' }}>
         <div className="max-w-[1200px] mx-auto">
-          {/* Navigation Info - 4 colunas com divisórias */}
-          <div className="flex items-stretch text-white mb-12 h-[70px]">
-            <div className="flex-1 flex flex-col items-center justify-center text-center border-r border-white/25 px-4">
-              <div className="text-[15px] font-light leading-tight">Bairro planejado</div>
-              <div className="text-[15px] font-light leading-tight">com monitoramento</div>
+          {/* Navigation Info - Grid responsivo */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-0 text-white mb-8 md:mb-12">
+            <div className="flex flex-col items-center justify-center text-center md:border-r border-white/25 px-2 md:px-4 py-4 md:py-0 min-h-[70px]">
+              <div className="text-[13px] md:text-[15px] font-light leading-tight">Bairro planejado</div>
+              <div className="text-[13px] md:text-[15px] font-light leading-tight">com monitoramento</div>
             </div>
-            <div className="flex-1 flex flex-col items-center justify-center text-center border-r border-white/25 px-4">
-              <div className="text-[15px] font-light leading-tight">Lotes</div>
-              <div className="text-[18px] font-semibold leading-tight">de 411 a 1.167 m²</div>
+            <div className="flex flex-col items-center justify-center text-center md:border-r border-white/25 px-2 md:px-4 py-4 md:py-0 min-h-[70px]">
+              <div className="text-[13px] md:text-[15px] font-light leading-tight">Lotes</div>
+              <div className="text-[16px] md:text-[18px] font-semibold leading-tight">de 411 a 1.167 m²</div>
             </div>
-            <div className="flex-1 flex flex-col items-center justify-center text-center border-r border-white/25 px-4">
-              <div className="text-[15px] font-light leading-tight">Clube com mais de</div>
-              <div className="text-[18px] font-semibold leading-tight">45 mil m²</div>
+            <div className="flex flex-col items-center justify-center text-center md:border-r border-white/25 px-2 md:px-4 py-4 md:py-0 min-h-[70px]">
+              <div className="text-[13px] md:text-[15px] font-light leading-tight">Clube com mais de</div>
+              <div className="text-[16px] md:text-[18px] font-semibold leading-tight">45 mil m²</div>
             </div>
-            <div className="flex-1 flex flex-col items-center justify-center text-center px-4">
-              <div className="text-[15px] font-light leading-tight">Fiação</div>
-              <div className="text-[15px] font-light leading-tight">subterrânea</div>
+            <div className="flex flex-col items-center justify-center text-center px-2 md:px-4 py-4 md:py-0 min-h-[70px]">
+              <div className="text-[13px] md:text-[15px] font-light leading-tight">Fiação</div>
+              <div className="text-[13px] md:text-[15px] font-light leading-tight">subterrânea</div>
             </div>
           </div>
 
@@ -149,13 +149,13 @@ export default function Home() {
 
 
       {/* Infrastructure Section - Página 2 do PDF */}
-      <section className="w-full py-24 px-4 bg-white">
+      <section className="w-full py-16 md:py-24 px-4 bg-white">
         <div className="max-w-[1200px] mx-auto">
           {/* Títulos centralizados */}
-          <h3 className="text-[36px] text-center mb-2 font-light leading-tight" style={{ color: '#5C5C5C', fontFamily: 'Arial, sans-serif' }}>
+          <h3 className="text-[22px] sm:text-[28px] md:text-[36px] text-center mb-2 font-light leading-tight px-4" style={{ color: '#5C5C5C', fontFamily: 'Arial, sans-serif' }}>
             Infraestrutura de lazer completa que traduz a
           </h3>
-          <h4 className="text-[36px] text-center mb-20 font-semibold leading-tight" style={{ color: '#3A3A3A', fontFamily: 'Arial, sans-serif' }}>
+          <h4 className="text-[22px] sm:text-[28px] md:text-[36px] text-center mb-12 md:mb-20 font-semibold leading-tight px-4" style={{ color: '#3A3A3A', fontFamily: 'Arial, sans-serif' }}>
             excelência da Tamboré Urbanismo
           </h4>
 
@@ -239,14 +239,14 @@ export default function Home() {
       </div>
 
       {/* CTA Section */}
-      <section className="w-full py-20 px-4" style={{ backgroundColor: '#EEEBE7' }}>
+      <section className="w-full py-16 md:py-20 px-4" style={{ backgroundColor: '#EEEBE7' }}>
         <div className="max-w-[900px] mx-auto text-center">
-          <h3 className="text-[36px] font-light leading-relaxed mb-8" style={{ color: '#5C5C5C', fontFamily: 'Arial, sans-serif' }}>
+          <h3 className="text-[22px] sm:text-[28px] md:text-[36px] font-light leading-relaxed mb-8 px-4" style={{ color: '#5C5C5C', fontFamily: 'Arial, sans-serif' }}>
             Entre em contato e receba um atendimento exclusivo do nosso time
           </h3>
           <button
             onClick={handleContactClick}
-            className="px-12 py-4 rounded-full text-[18px] font-semibold transition-all duration-300 hover:scale-105 shadow-xl"
+            className="px-8 md:px-12 py-3 md:py-4 rounded-full text-[16px] md:text-[18px] font-semibold transition-all duration-300 hover:scale-105 shadow-xl"
             style={{
               backgroundColor: '#616A6F',
               color: '#FFFFFF',
@@ -259,30 +259,30 @@ export default function Home() {
       </section>
 
       {/* About Section - 45 anos */}
-      <section className="w-full py-24 px-4" style={{ backgroundColor: '#616A6F' }}>
+      <section className="w-full py-16 md:py-24 px-4" style={{ backgroundColor: '#616A6F' }}>
         <div className="max-w-[1200px] mx-auto">
           {/* Primeira linha: Texto + 2 imagens grandes */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 mb-8 md:mb-12">
             {/* Texto */}
             <div className="text-white">
-              <h3 className="text-[42px] font-light mb-10 leading-[1.3]" style={{ fontFamily: 'Arial, sans-serif' }}>
+              <h3 className="text-[28px] sm:text-[34px] md:text-[42px] font-light mb-6 md:mb-10 leading-[1.3]" style={{ fontFamily: 'Arial, sans-serif' }}>
                 45 anos de excelência<br />construtiva
               </h3>
 
-              <p className="text-[16px] leading-[1.7] mb-7" style={{ fontFamily: 'Arial, sans-serif' }}>
+              <p className="text-[14px] md:text-[16px] leading-[1.7] mb-5 md:mb-7" style={{ fontFamily: 'Arial, sans-serif' }}>
                 A Tamboré Urbanismo transforma regiões e a forma de viver,
                 com empreendimentos de alta qualidade em mais de 15
                 cidades pelo Brasil.
               </p>
 
-              <p className="text-[16px] leading-[1.7] mb-7" style={{ fontFamily: 'Arial, sans-serif' }}>
+              <p className="text-[14px] md:text-[16px] leading-[1.7] mb-5 md:mb-7" style={{ fontFamily: 'Arial, sans-serif' }}>
                 Há 45 anos presente no mercado com projetos urbanísticos
                 inovadores, mais de 1.700 lotes entregues, sem falar no
                 cuidado em cada detalhe da construção, reforçando a grande
                 diferença entre viver e viver bem.
               </p>
 
-              <p className="text-[16px] leading-[1.7]" style={{ fontFamily: 'Arial, sans-serif' }}>
+              <p className="text-[14px] md:text-[16px] leading-[1.7]" style={{ fontFamily: 'Arial, sans-serif' }}>
                 Segurança, conforto, lazer, conveniência e qualidade de vida
                 permeiam todo e qualquer projeto desenvolvido.
               </p>
@@ -354,19 +354,19 @@ export default function Home() {
       </section>
 
       {/* Brookfield Section */}
-      <section className="w-full py-24 px-4 bg-white">
+      <section className="w-full py-16 md:py-24 px-4 bg-white">
         <div className="max-w-[1200px] mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
             {/* Logo Brookfield */}
             <div className="flex items-center justify-center md:justify-start">
-              <h2 className="text-[72px] font-bold tracking-tight" style={{ color: '#003D5B', fontFamily: 'Arial, sans-serif' }}>
+              <h2 className="text-[42px] sm:text-[56px] md:text-[72px] font-bold tracking-tight" style={{ color: '#003D5B', fontFamily: 'Arial, sans-serif' }}>
                 Brookfield
               </h2>
             </div>
 
             {/* Texto descritivo */}
             <div>
-              <p className="text-[15px] leading-[1.8]" style={{ color: '#5C5C5C', fontFamily: 'Arial, sans-serif' }}>
+              <p className="text-[14px] md:text-[15px] leading-[1.8]" style={{ color: '#5C5C5C', fontFamily: 'Arial, sans-serif' }}>
                 A Tamboré Urbanismo faz parte do grupo canadense Brookfield Asset
                 Management. Uma empresa líder global nos setores properties de infraestrutura,
                 energia renovável e private equity. São mais de US$ 1 trilhão de ativos sob gestão
