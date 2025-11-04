@@ -6,7 +6,7 @@ import ZoomableImage from './components/ZoomableImage';
 import WhatsAppButton from './components/WhatsAppButton';
 
 export default function Home() {
-  const phoneNumber = '5543933672587'; // +55 43 93367-2587
+  const phoneNumber = '554333672587'; // +55 43 93367-2587
 
   const handleContactClick = () => {
     const message = encodeURIComponent('Olá! Gostaria de mais informações sobre o Tamboré Londrina.');
